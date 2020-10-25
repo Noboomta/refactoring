@@ -1,9 +1,9 @@
 # Refactoring
 ## Code Chef
 
-From CodeChef repository code: https://github.com/hhhrrrttt222111/CodeChef
+From CodeChef repository code: <https://github.com/hhhrrrttt222111/CodeChef>
 
-consider this code from https://github.com/hhhrrrttt222111/CodeChef/blob/main/Easy/Another%20Card%20Game%20Problem%20(CRDGAME3)/card.py
+consider this code from <https://github.com/hhhrrrttt222111/CodeChef/blob/main/Easy/Another%20Card%20Game%20Problem%20(CRDGAME3)/card.py>
 (This is my commit at last week)
 
 ```python
@@ -30,7 +30,7 @@ consider this code from https://github.com/hhhrrrttt222111/CodeChef/blob/main/Ea
             output.append(f"1 {count_num(num2)}")
 ```
 
-consider this code from https://github.com/OOP2020/pa3-Noboomta/blob/master/src/converter/Temperature.java
+consider this code from <https://github.com/OOP2020/pa3-Noboomta/blob/master/src/converter/Temperature.java>
 (This is my PA3 from OOP class)
 
 ```java
@@ -80,16 +80,16 @@ consider this code from https://github.com/OOP2020/pa3-Noboomta/blob/master/src/
         double hereCode = this.getValue();
         switch(fromCode){
             case(111){
-                if(hereCode == 222) return amount + 273.15;
-                else if(hereCode == 333) return (amount * (9.0/5.0)) + 32;
+                if(hereCode == 222){ return amount + 273.15;}
+                else if(hereCode == 333){ return (amount * (9.0/5.0)) + 32;}
             }
             case(222){
-                if(hereCode == 111) return amount - 273.15;
-                else if(hereCode == 333) return ((amount - 273.15) * (9.0/5.0)) + 32;
+                if(hereCode == 111){ return amount - 273.15;}
+                else if(hereCode == 333){ return ((amount - 273.15) * (9.0/5.0)) + 32;}
             }
             case(333){
-                if(hereCode == 111) return (amount - 32.0) * (5.0/9.0);
-                else if(hereCode == 222) return ((amount - 32.0) * (5.0/9.0)) + 273.15;
+                if(hereCode == 111){ return (amount - 32.0) * (5.0/9.0);}
+                else if(hereCode == 222){ return ((amount - 32.0) * (5.0/9.0)) + 273;}15;
             }
         }
         return amount;
