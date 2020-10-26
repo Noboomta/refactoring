@@ -93,3 +93,44 @@ consider this code from <https://github.com/OOP2020/pa3-Noboomta/blob/master/src
         return amount;
     }
 ```
+
+consider this code from <https://github.com/Noboomta/PA4/blob/master/src/sample/AllTask.java>
+(This is my PA4 from OOP class)
+
+```java
+        /**
+     * To return all task progress
+     */
+    public double getAllProgress() {
+        double allProgress = 0;
+        for (Task task : allTask) {
+            allProgress += task.getProgress();
+        }
+        return allProgress / allTask.size();
+    }
+```
+
+- Refactoring signs.
+  - refactor the to not calculate in the return method.
+  - move the calculate process to set in the class attribute.
+
+```java
+        /**
+     * To return all task progress
+     */
+    public double getAllProgress() {
+        this.setProgress();
+        return this.allProgress;
+    }
+
+    /**
+     * Set all progress.
+     */
+    public void setProgress(){
+        double allProg = 0;
+        for (Task task : allTask) {
+            allProg += task.getProgress();
+        }
+        this.allProgress = allProg / allTask.size();
+    }
+```
