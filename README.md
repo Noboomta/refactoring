@@ -80,18 +80,15 @@ consider this code from <https://github.com/OOP2020/pa3-Noboomta/blob/master/src
         double fromCode = fromUnit.getValue();
         double hereCode = this.getValue();
         switch(fromCode){
-            case(111){
-                if(hereCode == 222){ return amount + 273.15;}
-                else if(hereCode == 333){ return (amount * (9.0/5.0)) + 32;}
-            }
-            case(222){
-                if(hereCode == 111){ return amount - 273.15;}
-                else if(hereCode == 333){ return ((amount - 273.15) * (9.0/5.0)) + 32;}
-            }
-            case(333){
-                if(hereCode == 111){ return (amount - 32.0) * (5.0/9.0);}
-                else if(hereCode == 222){ return ((amount - 32.0) * (5.0/9.0)) + 273;}15;
-            }
+            case(111):
+                if(hereCode == 222): return amount + 273.15;
+                else if(hereCode == 333): return (amount * (9.0/5.0)) + 32;
+            case(222):
+                if(hereCode == 111): return amount - 273.15;
+                else if(hereCode == 333): return ((amount - 273.15) * (9.0/5.0)) + 32;
+            case(333):
+                if(hereCode == 111): return (amount - 32.0) * (5.0/9.0);
+                else if(hereCode == 222): return ((amount - 32.0) * (5.0/9.0)) + 273.15;
         }
         return amount;
     }
